@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+   
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assers/pexels-maxyne-barcel-10402282_1.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    overflow: hidden;
+
+    
+}
+nav{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 2%;
+}
+.logo{
+    height: 15px;
+    width: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    
+}
+nav ul li {
+    text-decoration: none;
+    display: flex;
+    justify-items: center;
+    padding: 20px 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color: rgb(253, 184, 23);
+    transition: 1s;
+
+}
+button{
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid rgb(255, 252, 252);
+    background-color: #f40c0c;
+    border-radius: 30px;
+    padding: 20px 30px;
+
+}
+button:hover{
+    color: #000;
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 30px;
+    padding:20px 30px;
+
+}
+.hero main{
+    height:60% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero main h1{
+    font-size: 80px;
+    color: #edc01b;
+    text-align: center;
+}
+.hero footer img{
+position: absolute;left: 85%;
+}
+
