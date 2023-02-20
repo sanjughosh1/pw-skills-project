@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #010016;
+    display: flex;
+    flex-direction: column;
+}
+nav ul{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+nav ul li{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #010016 ;
+    padding: 10px 30px;
+}
+nav ul li a:hover{
+    color: #fff;
+    border: 2px solid #6e69ce ;
+    background-color: #6059e6;
+    padding: 10px 30px;
+    border-radius: 12px;
+}
+img[alt=manu]{
+    display: none;
+    width: 20px;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+
+}
+.left{
+    color: #fff;
+}
+img[alt=hi-emog]{
+    height: 40px;
+}
+
+.left h3{
+    font-size: 50px;
+}
+.left h1{
+    font-size: 80px;
+}
+.left h2{
+    font-size: 40px;
+    color: #f7d756;
+}
+img[alt=img-pc]{
+    height: 80vh;
+}
+
+.Project-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+     column-gap: 20px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 50px 50px;
+
+}
+.heading h1{
+    font-size: 40px;
+    color: #fff;
+  
+}
+.line{
+    height: 11px;
+    width: 200px;
+    background-color: blue;
+    border-radius: 12px;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img[alt=image]{
+    height: 500px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom:50px;
+    padding-bottom: 50px;
+}
+img[alt=github]{
+    height: 40px;
+}
+img[alt=linkedin]{
+    height: 40px;
+}
+img[alt=outlook]{
+    height: 40px;
+}
+@media screen and (max-width: 575px) {
+    nav ul{
+        display: none;
+    }
+    img[alt=manu]{
+        display:block;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .left{
+        color: #fff;
+    }
+    img[alt=hi-emog]{
+        height: 20px;
+    }
+    .left h1{
+        font-size: 40px;
+    }
+    .left h2{
+        font-size: 20px;
+        color: #f7d756;
+    }
+    .left h3{
+        font-size: 20px;
+    }
+    img[alt=img-pc]{
+        width: 350px;
+        height: 350px;
+        padding: 50px;
+    }
+    img[alt=image]{
+        width:200px;
+        height:200px;
+    }
+    .heading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px 50px;
+    }
+    .heading h1{
+        font-size: 40px;
+        color: #fff;
+    }
+    .line{
+        height: 11px;
+        width: 200px;
+        background-color: blue;
+        border-radius: 12px;
+    }
+    .Project-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .project{
+        display: flex;
+        justify-content: center;
+    }
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin-bottom:50px;
+        padding-bottom: 50px;
+    }
+    img[alt=github]{
+        height: 40px;
+    }
+    img[alt=linkedin]{
+        height: 40px;
+    }
+    img[alt=outlook]{
+        height: 40px;
+    }
+}
