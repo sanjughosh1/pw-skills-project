@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
+}
+body{
+    background-color: #eae7e7;
+}
+header{
+    width: 100%;
+    background-image: radial-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/photos/mainBackground.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 125vh;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 80px;
+    gap: 50px;
+}
+hr{
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+nav ul{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 30px;
+    padding: 10px 40px;
+}
+nav ul li{
+        display: flex;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #6663e9;
+    padding: 20px 20px;
+    border-radius:12px ;
+}
+nav ul li a:hover{
+     color: #000;
+    padding: 20px 20px;
+    border-radius:12px ;
+    background-color:#fff;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: space-around;
+    gap: 30px;
+    padding:90px 90px;
+}
+.intro h1{
+    color: #fff;
+    font-size: 90px;
+}
+.intro p{
+    color: #fff;
+    font-size: 20px;
+}
+button{
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    background-color:#6663e9;
+}
+button:hover{
+    height: 50px;
+    width: 200px;
+    color: #a200ff;
+    border-radius: 12px;
+    background-color: #fff;
+}
+.logo-bar{
+    position: absolute;
+    left: 5%;
+    bottom: -40px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 12px;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+
+}
+img[alt=cardImage]{
+    width: 90%;
+    height: 300px;
+    border-radius:13px;
+
+}
+.section-one{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+}
+.center h1{
+    font-size: 70px;
+}
+.shop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 30px;
+}
+.shop-first-layer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.shop-secend-layer{
+    padding: 30px 10px;
+}
+.split{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    padding: 10px;
+    gap: 50px;
+    background-color: #fff;
+    border-radius: 12px;
+    position: relative;
+    bottom:45px;
+    left: 20px;
+}
+.section-two{
+    padding:0    50px;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+img[alt=heroimg-one]{
+    height: 50vh;
+    width: 50%;
+    border-radius: 20%;
+    position: relative;
+    top:460px;
+    left: 120px;
+}
+.lines{
+    position: relative;
+    top: 200px;
+}
+.lines h1{
+    font-size: 50px;
+}
+.section-three{
+    color: #fff;
+    background-color: #6663e9;
+    height: 50%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:center ;
+    gap: 50px;
+    padding: 30px ;
+    margin: 100px 70px;
+    border-radius: 30px;
+}
+.section-three h2{
+    font-size: 50px;
+}
+.section-three p{
+    font-size: 20px;
+}
+.input-style{
+    border: 0;
+}
+img[alt=mail]{
+    margin: 0;
+    position: relative;
+    left: 70px;
+    top: 10px;
+
+}
+.input-style input{
+    background-color: #3c3a8b;
+    padding: 20px 100px;
+    border-radius: 12px;
+}
+.input-style button{
+    color: #6663e9;
+    background-color: #fff;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 40px;
+
+}
+.first-column{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.first-column p{
+    font-size: 20px;
+}
+table{
+    padding: 10px;
+    text-align: center;
+}
+table tr th{
+    font-weight: 900;
+    font-size: 30px;
+    padding: 40px 50px;
+}
+table tr td {
+    padding: 15px 15px;
+}
+table tr td a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
