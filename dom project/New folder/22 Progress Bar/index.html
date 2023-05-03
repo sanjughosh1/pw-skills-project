@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scroll progress bar</title>
+        <style>
+          .progress-bar {
+            height: 5px;
+            background-color: blue;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+          }
+        </style>
+</head>
+<body>
+        <div class="progress-bar" style="width:0%;"></div>
+      
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum mi a finibus dapibus. Proin commodo, eros ut vestibulum interdum, eros quam bibendum elit, eu ullamcorper elit metus eget mauris.</p>
+        <p>Suspendisse ut odio eu magna tincidunt aliquet. Vestibulum et lacus id tellus fringilla vestibulum ut eget nisi. Praesent pretium, mauris vel dapibus vestibulum, nibh nibh dignissim ante, id rutrum enim turpis at purus.</p>
+        <p>Donec eu nulla felis. Sed mattis massa vel ipsum faucibus, vitae ullamcorper nisi blandit. Donec tristique tortor vel ex vestibulum aliquam. Ut eleifend, nibh quis bibendum rhoncus, nisl est tempor odio, non sagittis lectus purus ac enim.</p>
+        <p>Pellentesque eleifend nulla quis tortor bibendum lacinia. Aenean consectetur erat sit amet lorem suscipit tempor. In vel purus consequat, hendrerit nisl at, finibus nisl. Nunc id diam vitae sapien dignissim eleifend.</p>
+      
+        <script>
+          const progressBar = document.querySelector('.progress-bar');
+          const height = document.documentElement.scrollHeight - window.innerHeight;
+      
+          window.addEventListener('scroll', function() {
+            const progress = (window.scrollY / height) * 100;
+            progressBar.style.width = progress + '%';
+          });
+        </script>
+    
+</body>
+</html>

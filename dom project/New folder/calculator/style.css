@@ -1,0 +1,30 @@
+.calculator {
+    margin: 50px auto;
+    text-align: center;
+    width: 240px;
+  }
+  input {
+
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 20px 50px;
+    border-radius: 12px;
+    background-color: #3d414d7c;
+    text-align: right;
+    width: 100%;
+  }
+  button {
+    background-color: #181717;
+    border: none;
+    color: #f2eaea;
+    border-radius: 12px;
+    font-size: 24px;
+    height: 80px;
+    width: 80px;
+  }
+  button:hover {
+    background-color: #aaa;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  

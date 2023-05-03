@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Form</title>
+        <style>
+          .error {
+            color: red;
+          }
+          .success {
+            color: green;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Login Form</h1>
+        <form id="login-form">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required><br><br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required><br><br>
+          <input type="submit" value="Submit">
+        </form>
+        <p id="message"></p>
+        <script>
+          const form = document.getElementById("login-form");
+          const message = document.getElementById("message");
+    
+          form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const email = form.elements.email.value;
+            const password = form.elements.password.value;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+            if (!emailRegex.test(email)) {
+              message.textContent = "Invalid email or password!";
+              message.className = "error";
+            } else if (password.length < 8) {
+              message.textContent = "Invalid email or password!";
+              message.className = "error";
+            } else {
+              message.textContent = "Valid email and password!";
+              message.className = "success";
+            }
+          });
+        </script>
+      </body>
+</html>

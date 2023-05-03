@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>What You'll Learn</title>
+ </head>
+ <body>
+    <h2>What You'll Learn</h2>
+    <ul id="learn-list"></ul>
+    <button id="add-btn">Add Item</button>
+
+    <script>
+      const learnList = [
+        "HTML and Semantics",
+        "Starting with CSS",
+        "Working Template",
+        "Mobile responsive webpages",
+        "Grid and Flex-box in CSS",
+        "Projects using HTML & CSS",
+        "Version Control and Git",
+        "Getting Started with JavaScript",
+        "Advance JavaScript",
+        "Working with DOM",
+        "Making Projects using HTML, CSS and JavaScript",
+        "Understanding Fundamental of Computer Science",
+        "Getting Started with Database",
+        "Understanding the Database",
+        "Starting with NodeJS and Express",
+        "Understanding React and its Fundamentals",
+        "Understanding Hooks and Routers",
+        "Starting and Completing Full Fledge Projects"
+      ];
+
+      const learnListElem = document.getElementById("learn-list");
+      const addBtn = document.getElementById("add-btn");
+      let currentIndex = 0;
+
+      function addItemToList() {
+        if (currentIndex >= learnList.length) {
+          learnListElem.insertAdjacentHTML("beforeend", "<li>All items added!</li>");
+          addBtn.disabled = true;
+        } else {
+          learnListElem.insertAdjacentHTML("beforeend", `<li>${learnList[currentIndex]}</li>`);
+          currentIndex++;
+        }
+      }
+
+      addBtn.addEventListener("click", addItemToList);
+    </script>
+  </body>
+</html>
+
+   
